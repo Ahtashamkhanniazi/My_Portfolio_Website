@@ -1,0 +1,84 @@
+{
+    "person": {
+        "role": "MERN Stack Developer"
+    },
+    "newsletter": {
+        "title": "Subscribe to Ahtasham's Newsletter",
+        "description": "I occasionally write about design, technology, and share insights on the intersection of creativity and engineering",
+        "button": "Sign up"
+    },
+    "home": {
+        "label": "Home",
+        "title": "Ahtasham Aslam's Portfolio",
+        "description": "Portfolio website showcasing my work as a MERN Stack Developer",
+        "headline": "MERN Stack Developer",
+        "subline": "I'm Muhammad Ahtasham Aslam, a skilled MERN Stack Developer based in Lahore. With experience in developing secure, responsive web applications, I bring digital ideas to life through clean, efficient code."
+    },
+    "about": {
+        "label": "About",
+        "title": "About Me",
+        "description": "Meet Ahtasham, a proficient MERN Stack Developer from Lahore",
+        "intro": {
+            "title": "Introduction",
+            "description": "Muhammad Ahtasham Aslam is a Lahore-based MERN Stack Developer with a passion for creating secure and responsive web applications. With extensive experience in frameworks like Next.js, Electron.js, and blockchain integration, Ahtasham specializes in the convergence of design and technology to solve complex challenges."
+        },
+        "work": {
+            "title": "Work Experience",
+            "experiences": {
+                "Beard Brother Technologies": {
+                    "timeframe": "03/2023 – 09/2024",
+                    "role": "MERN Stack Developer",
+                    "achievements": "Developed responsive web applications using MERN stack, Next.js, Material-UI, and Emotion, enhancing performance and user experience.; Developed a desktop VPN application with Electron.js, expanding digital solutions for secure browsing.; Implemented secure authentication with JWT, ensuring robust data privacy."
+                },
+                "CodeNinja Inc.": {
+                    "timeframe": "07/2021 – 02/2023",
+                    "role": "Associate Front-End Developer",
+                    "achievements": "Collaborated with design and back-end teams to develop responsive, user-friendly interfaces using React, Next.js, HTML, CSS, and JavaScript.; Ensured cross-browser compatibility and optimized performance for seamless user experiences.; Contributed to debugging and refining UI components to meet project specifications."
+                }
+            }
+        },
+        "studies": {
+            "title": "Education",
+            "institutions": {
+                "Lahore Leads University": {
+                    "description": "Bachelor of Studies in Software Engineering, 3.12 CGPA"
+                }
+            }
+        },
+        "technical": {
+            "title": "Technical Skills",
+            "skills": {
+                "Languages": {
+                    "description": "JavaScript, HTML, CSS, Urdu (Fluent), English (Proficient)"
+                },
+                "Frameworks": {
+                    "description": "MongoDB, Express.js, React.js, Node.js, Next.js, Electron.js, Redux, Material-UI, Emotion"
+                },
+                "Blockchain": {
+                    "description": "Experienced in Ethers.js, Web3.js, Web3modal, and Wagmi, developing secure blockchain-based solutions"
+                },
+                "Tools": {
+                    "description": "GitHub, Jira, Figma, Adobe XD, VS Code, Postman, FileZilla"
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Writing about tech and development...",
+        "description": "Read what Ahtasham has been working on and thinking about recently"
+    },
+    "work": {
+        "label": "Work",
+        "title": "My Projects",
+        "description": "Development projects by Ahtasham"
+    },
+    "gallery": {
+        "label": "Gallery",
+        "title": "My Photo Gallery",
+        "description": "A collection of photos by Ahtasham"
+    },
+    "projectCard": {
+        "label": "Read Case Study"
+    }
+}
