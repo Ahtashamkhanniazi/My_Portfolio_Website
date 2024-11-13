@@ -85,7 +85,7 @@ const about = {
                 images: []
             },
             {
-                company: 'CodeNinja Inc.',
+                company: 'CodeNinja Inc',
                 timeframe: '07/2021 – 02/2023',
                 role: 'Associate Front-End Developer',
                 achievements: [
