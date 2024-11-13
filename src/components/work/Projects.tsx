@@ -9,7 +9,7 @@ interface ProjectsProps {
 }
 
 export function Projects({ range, locale }: ProjectsProps) {
-    let allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', 'en']);
+    let allProjects = getPosts('en');
 
     const sortedProjects = allProjects.sort((a, b) => {
         return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();

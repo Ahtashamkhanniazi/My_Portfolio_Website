@@ -59,17 +59,19 @@ function getMDXData(dir: string) {
     });
 }
 
-export function getPosts(customPath = ['src', 'app', '[locale]', 'work', 'projects', 'en']) {
+export function getPosts(locale = 'en', customPath = ['src', 'app', 'work', 'projects', 'en']) {
+    const localizedPath = ['src', 'app', locale, ...customPath.slice(2)]; // Replace '[locale]' with the actual locale
     try {
-        const postsDir = path.join(process.cwd(), ...customPath);
+        const postsDir = path.join(process.cwd(), ...localizedPath);
         console.log("Resolved posts directory:", postsDir);
-        console.log("Files in directory:", fs.readdirSync(postsDir));        
+        console.log("Files in directory:", fs.readdirSync(postsDir));
         return getMDXData(postsDir);
     } catch (error) {
         console.error("Error loading posts:", error);
         return [];
     }
 }
+
 
 export function formatDate(date: string, includeRelative = false) {
     const currentDate = new Date();
