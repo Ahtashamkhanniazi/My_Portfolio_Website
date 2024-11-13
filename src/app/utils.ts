@@ -61,7 +61,9 @@ function getMDXData(dir: string) {
 
 export function getPosts(customPath = ['src', 'app', '[locale]', 'work', 'projects', 'en']) {
     try {
-        const postsDir = path.join(process.cwd(), ...customPath);        
+        const postsDir = path.join(process.cwd(), ...customPath);
+        console.log("Resolved posts directory:", postsDir);
+        console.log("Files in directory:", fs.readdirSync(postsDir));        
         return getMDXData(postsDir);
     } catch (error) {
         console.error("Error loading posts:", error);
