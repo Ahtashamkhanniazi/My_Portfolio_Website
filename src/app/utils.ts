@@ -59,9 +59,16 @@ function getMDXData(dir: string) {
     });
 }
 
-export function getPosts(customPath = ['', '', '', '']) {
-    const postsDir = path.join(process.cwd(), ...customPath);
-    return getMDXData(postsDir);
+export function getPosts(customPath = ['src', 'app', 'en', 'work', 'projects']) {
+    try {
+        const postsDir = path.join(process.cwd(), ...customPath);
+        console.log("Port Dir:", postsDir);
+        
+        return getMDXData(postsDir);
+    } catch (error) {
+        console.error("Error loading posts:", error);
+        return [];
+    }
 }
 
 export function formatDate(date: string, includeRelative = false) {
