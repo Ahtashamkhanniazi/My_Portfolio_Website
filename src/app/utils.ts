@@ -59,11 +59,9 @@ function getMDXData(dir: string) {
     });
 }
 
-export function getPosts(customPath = ['src', 'app', 'en', 'work', 'projects']) {
+export function getPosts(customPath = ['src', 'app', '[locale]', 'work', 'projects', 'en']) {
     try {
-        const postsDir = path.join(process.cwd(), ...customPath);
-        console.log("Port Dir:", postsDir);
-        
+        const postsDir = path.join(process.cwd(), ...customPath);        
         return getMDXData(postsDir);
     } catch (error) {
         console.error("Error loading posts:", error);
